@@ -1,38 +1,79 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+
+
+  <title>Desafio ENCRIPTADOR Oracle ONE</title>
+
+  <!-- Fontawesome-->
+  <script src="https://kit.fontawesome.com/9514dd5057.js" crossorigin="anonymous"></script>
+  <!-- CSS Custom -->
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <header>
-    <div class="container">
-      <h1 class="titulo">Encriptador de texto</h1>
-    </div>
-  </header>
-  
-
   <main class="main">
+    <!-- logo -->
+    <div class="logo">
+      <div class="logo-img-container">
+        <a href="https://www.aluracursos.com/" target="blank"><img src="img/alura-logo.png" alt="" /></a>
+      </div>
+    </div>
+    <section class="container">
+      <ul id="mensajes-errores"></ul>
+        <div class="encriptador-container">
+          
+            <div>
+                <textarea class="encriptador__textarea" name="" id="area" cols="30" rows="10"
+                    placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="button-container">
+                <div class="text-aclaration">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="buttons">
+                    <button id="button-encriptar" class="button-encriptar">
+                      <div class="btn-1-text">Encriptar</div></button>
+                    <button id="button-desencriptar" class="button-desencriptar">
+                      <div class="btn-2-text">Desencriptar</div></button>
+                </div>
 
-    
-        <input class="text-input" type="text" id="input-texto" placeholder="Ingrese el texto aqui">
-        
-        <label>Solo letras minúsculas, sin acento</label>
-        
-        <input class="btnEncriptar" type="submit" value="Encriptar" id="btn-encriptar">
-        <input class="btnDesencriptar" type="submit" value="Desencriptar" id="btn-desencriptar">
-
-  
-    <section class="msg box">
-      <h2 id="">Mensaje encriptada:</h2>
-      <input class="text-input" type="text" id="msg"></input>
-      <input class="btn" type="submit" value="copiar" id="btn-copy">
+            </div>
+        </div>
+        <div class="aside-container">
+            <p class="text-area-dec" id="desencriptar-texto"></p>
+            <img class="character-image" src="img/personaje.png" alt="Personaje con diamente">
+            <h2 class="aside__title">Ningún mensaje fue encontrado</h2>
+            <p class="aside__paragraph">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button id="button-copy" class="button-copy">Copiar</button>
+            <div id="message-copied">
+                </d>
+            </div>
+        </div>
     </section>
   </main>
 
-  <script src="js/script.js"></script>
+  <footer>
+      <p class="footer-paragraph">Creado por Pau Morales 💕 - Contacto:
+          <a href="https://www.linkedin.com/in/paumorales98/"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://github.com/pau-morales"><i class="fab fa-github-square fa-2x"></i></a>
+      </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/validar.js"></script>
+  <script src="js/mostrar_ocultar_texto.js"></script>
+  <script src="js/encriptar.js"></script>
+  <script src="js/desencriptar.js"></script>
+  <script src="js/copiar.js"></script>
+  <script src="js/is-ok.js"></script>
 </body>
 </html>
