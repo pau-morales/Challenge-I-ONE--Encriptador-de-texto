@@ -12,4 +12,4 @@ El resto de los requisitos son:
 - No deben ser utilizados letras con acentos ni caracteres especiales
 - Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
 
-Preview page: 
+Preview page: https://pau-morales.github.io/Challenge-I-ONE--Encriptador-de-texto/
